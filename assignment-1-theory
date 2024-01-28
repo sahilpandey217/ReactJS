@@ -1,0 +1,52 @@
+Theory -
+● What is Emmet?
+  Emmet is a free plugin for text editors that allows users to type shortcuts that expand into full pieces of code. It is a development tool that helps users quickly create repetitive     
+  structures like lists, tables, or ordered elements with minimal typing.
+
+● Difference between a Library and Framework?
+  Both frameworks and libraries are code written by someone else that is used to help solve common problems.
+  The Technical Difference
+  The technical difference between a framework and library lies in a term called inversion of control.
+  When you use a library, you are in charge of the flow of the application. You are choosing when and where to call the library. When you use a framework, the framework is in charge of the   flow. It provides some places for you to plug in your code, but it calls the code you plugged in as needed.
+  
+● What is CDN? Why do we use it?
+  A content delivery network (CDN) is a group of servers that store content close to end users. CDNs help improve web performance and availability by placing copies of web content closer     to users.
+  A CDN, or Content Delivery Network, is a network of distributed servers strategically located around the world to deliver web content (such as images, stylesheets, JavaScript files, and    other assets) to users based on their geographic location. The primary purpose of using a CDN is to improve the performance, reliability, and efficiency of content delivery on the web.
+
+● Why is React known as React?
+          React, the JavaScript library for building user interfaces, is named "React" because of its core concept of reacting to changes in data. The library was developed by Facebook and was initially released in 2013. React allows developers to build dynamic and interactive user interfaces by efficiently updating and rendering components in response to changes in application state.
+        
+        The key idea behind React is the concept of a "virtual DOM" and a reactive programming model. Instead of directly manipulating the browser's DOM (Document Object Model), React creates a virtual representation of the DOM in memory. When the state of a component changes, React calculates the difference (or "diff") between the current virtual DOM and the new one, and then efficiently updates only the parts of the actual DOM that need to change.
+        
+        The term "React" captures the essence of how the library responds to changes in data and updates the user interface accordingly. The reactive nature of React allows developers to build complex and dynamic UIs with a declarative syntax, making it easier to reason about and maintain the application code.
+        
+        In addition to its reactivity, React promotes a component-based architecture, where the UI is composed of modular and reusable components. Each component can manage its own state, making it easier to build and maintain large and complex applications.
+        
+        It's worth noting that React is often paired with other technologies and libraries, such as Redux for state management, and is widely used in the development of single-page applications (SPAs) and dynamic web interfaces.
+
+● What is crossorigin in script tag?
+    If you serve React from a CDN, we recommend to keep the crossorigin attribute set:
+
+        <script crossorigin src="..."></script>
+    We also recommend to verify that the CDN you are using sets the Access-Control-Allow-Origin: * HTTP header:  
+    This enables a better error handling experience in React 16 and later.
+
+● What is diference between React and ReactDOM?
+      React and ReactDOM are both JavaScript libraries for building user interfaces. React is the main library, and ReactDOM is a separate library that provides the necessary bindings for React to interact with the Document Object Model (DOM) in web browsers.
+    React itself focuses on the view or presentation layer of an application, while ReactDOM is responsible for updating the DOM based on changes to the React state. This separation of concerns makes it easier to reason about and maintain React applications.
+  
+● What is difference between react.development.js and react.production.js files via CDN?
+      The main difference between react.development.js and react.production.js files via CDN is that the development file is used for development purposes, while the production file is used for production purposes.
+    The development file is typically larger in size and contains additional code, comments, and debugging information that is helpful for developers when they are working on a React application. This extra information can be helpful for debugging and troubleshooting issues, but it is not necessary for the application to function properly in a production environment.
+    The production file, on the other hand, is optimized for performance and has undergone various optimizations, including minification and the removal of unnecessary code. This results in a smaller file size, which can improve the loading speed of the application. Additionally, the production file does not contain any debugging information, which can help to protect the application from security vulnerabilities.
+    In general, it is recommended to use the production file in a production environment, as it will provide the best possible performance and security for the application. However, the development file can be useful for debugging and troubleshooting issues during development.
+
+
+● What is async and defer? - see my Youtube video ;
+  In JavaScript, async and defer are attributes that tell the browser it's safe to continue loading the page while scripts are being downloaded. 
+    Here are some differences between async and defer:
+    Async
+    Allows a script to run as soon as it's loaded, without blocking other elements on the page. Async scripts are executed as soon as they are downloaded, but they don't maintain any particular order.
+    Defer
+    Means a script will only execute after the page has finished loading. Defer scripts execute after the page has finished loading and before the DOMContentLoaded event. Defer scripts will be executed in the same order they are enqueued. 
+    In most cases, async is the better option, but there are exceptions.
