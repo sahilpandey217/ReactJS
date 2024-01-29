@@ -1,0 +1,67 @@
+● - What is `NPM`?
+  NPM is node package manager which is bundles with node.Its command-line (CLI) client npm can be used to download, configure and create packages for use in Node.js projects.
+
+● - What is `Parcel/Webpack`? Why do we need it?
+  Parcel and webpack are popular build tools in web development, streamlining the process of bundling and optimizing assets like HTML, CSS, and JavaScript. Each has its strengths.
+
+Webpack:
+Functionality: Powerful and configurable with a robust plugin system.
+Configuration: More complex, providing extensive control.
+Community: Large and well-established, with a vast ecosystem.
+Parcel:
+Functionality: "Zero-configuration" for easy setup.
+Configuration: Minimal, making it great for quick starts.
+Performance: Known for fast build times.
+Why use build tools?
+Code Bundling: Reduces requests, improving loading times.
+Minification: Shrinks code size for faster downloads.
+Transpilation: Converts modern code for compatibility.
+Asset Optimization: Enhances images and fonts for web delivery.
+Code Splitting: Loads only necessary code for better performance.
+Environment-specific Configurations: Tailors settings for different environments.
+Automation: Streamlines tasks like testing and deployment.
+Creates a serevr:
+HMR-(hot modle replacement)
+File watcher handling
+Cleaning our code
+Dev abd production build
+Super fast build Algorithm
+Image optimization
+Caching while development
+Compression
+HTTPS on dev
+Consistent hashing Algorithm
+
+In essence, these tools enhance the development and deployment of web applications, offering optimizations based on project needs and developer preferences. The choice between webpack and Parcel depends on factors like project complexity and desired configuration control.
+  
+
+● - What is `.parcel-cache`
+  It is used to store cache files generated during the bundling process. Caching is a technique employed by build tools to speed up subsequent builds by avoiding redundant work.
+
+● - What is `npx` ?
+  npx execute parcel using npm as index.html as entry point.
+
+● - What is difference between `dependencies` vs `devDependencies`
+  In web development, dependencies are packages that are required for an application to run properly. Devdependencies are packages that are only needed during the development of a project. 
+
+● - What is Tree Shaking?
+  Tree shaking is a technique used in modern JavaScript bundlers, like webpack and Parcel, to eliminate unused code (dead code) from the final bundled output. The goal is to optimize the size of the generated bundle by excluding parts of the code that are not actually used in the application.
+
+● - What is Hot Module Replacement?
+  As you make changes to your code, Parcel automatically rebuilds the changed files and updates your app in the browser. By default, Parcel fully reloads the page, but in some cases it may perform Hot Module Replacement (HMR). HMR improves the development experience by updating modules in the browser at runtime without needing a whole page refresh. This means that application state can be retained as you change small things in your code.
+
+● - List down your favourite 5 superpowers of Parcel and describe any 3 of them in your
+own words.
+  
+● - What is `.gitignore`? What should we add and not add into it?
+  
+● - What is the difference between `package.json` and `package-lock.json`
+
+● - Why should I not modify `package-lock.json`?
+  
+● - What is `node_modules` ? Is it a good idea to push that on git?
+  
+● - What is the `dist` folder?
+  
+● - What is `browserlists`
+  
